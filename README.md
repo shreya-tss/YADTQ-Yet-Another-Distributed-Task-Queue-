@@ -1,7 +1,7 @@
 # YADTQ-Yet-Another-Distributed-Task-Queue-
 Project done as a part of an elective course Big Data (UE22CS342AA2) at Pes University
 # Goal 
-Distributed Task Queue-  is a system that efficiently manages tasks across multiple computers. It ensures tasks are executed asynchronously, making it ideal for applications requiring reliable, scalable, and parallel processing.asks are placed in a queue, and worker nodes pick them up when available. This approach allows for smooth task execution, even in dynamic environments where workers may join or leave. Popular tools like Celery serve as examples of such systems, managing distributed task execution seamlessly.The goal was to design a distributed task queue that co-ordinates across multiple worker nodes in a highly distributed setup using Kafka as the core communication service
+Distributed Task Queue-  is a system that efficiently manages tasks across multiple computers. It ensures tasks are executed asynchronously, making it ideal for applications requiring reliable, scalable, and parallel processing.asks are placed in a queue, and worker nodes pick them up when available. This approach allows for smooth task execution, even in dynamic environments where workers may join or leave. Popular tools like Celery serve as examples of such systems, managing distributed task execution seamlessly.The goal was to design a distributed task queue that co-ordinates across multiple worker nodes in a highly distributed setup using Kafka as the core communication service. Kafka was chosen over other messaging systems like RabbitMQ and ActiveMQ due to its ability to handle high-throughput data streams with low latency, built-in fault tolerance, and robust scalability. Additionally, Kafka's strong support for distributed architectures and persistent storage makes it well-suited for managing the complex, asynchronous workflows required in this system.
 
 # System Design 
 
@@ -26,4 +26,24 @@ Heartbeat Monitoring:
 
 Task Status Tracking:
 
--Real-time updates for clients on task progress and outcomes.
+- Real-time updates for clients on task progress and outcomes.
+
+# Example of working 
+Task Example (in Kafka Queue):
+
+{
+  "task-id": "d5750c0e-ed82",
+  "task": "add",
+  "args": [1, 2]
+}
+
+Result Example (in Result Backend):
+
+{
+  "d5750c0e-ed82": {
+    "status": "success",
+    "result": "3"
+  }
+}
+
+
