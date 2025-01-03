@@ -5,6 +5,9 @@ Distributed Task Queue-  is a system that efficiently manages tasks across multi
 
 # System Design 
 
+
+
+
 ![image](https://github.com/user-attachments/assets/d714de83-1d69-4969-956f-9a4bbb265f51)
 
 
