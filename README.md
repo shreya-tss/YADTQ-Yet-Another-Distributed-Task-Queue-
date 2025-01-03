@@ -11,3 +11,19 @@ Distributed Task Queue-  is a system that efficiently manages tasks across multi
 
 
 
+
+# Features
+
+Worker Assignment:
+
+- Evenly distributes tasks among active workers.
+- Ensures fault tolerance and task reassignment in case of worker failure.
+
+Heartbeat Monitoring:
+
+- Tracks active worker nodes.
+- Ensures system reliability by identifying inactive nodes.
+
+Task Status Tracking:
+
+-Real-time updates for clients on task progress and outcomes.
