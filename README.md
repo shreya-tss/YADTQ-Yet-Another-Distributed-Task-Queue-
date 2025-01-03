@@ -30,11 +30,11 @@ Task Status Tracking:
 
 # Example of working 
 Task Example (in Kafka Queue):
-
+### Submit a task
 {
-  "task-id": "d5750c0e-ed82",
-  "task": "add",
-  "args": [1, 2]
+  "task-id": "12345abc",
+  "task": "multiply",
+  "args": [4, 5]
 }
 
 Result Example (in Result Backend):
