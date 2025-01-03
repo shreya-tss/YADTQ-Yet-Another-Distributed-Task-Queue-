@@ -46,4 +46,10 @@ Result Example (in Result Backend):
   }
 }
 
+# Code 
+Below is a pseudocode to demonstrate the system 
+
+![image](https://github.com/user-attachments/assets/8a52f8bc-4bce-499c-9ca5-4d510925fda0)
+
+
 
